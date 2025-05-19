@@ -6,10 +6,12 @@ import NavbarButton from "./NavbarButton";
 import { DropdownMenu, Button } from "@radix-ui/themes";
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
-  const signUp = () => console.log("User sign up");
+  const signUp = () => router.push("/sign-up")
   const logIn = () => console.log("User log in");
   return (
     <nav className="flex justify-between items-center bg-white border-b-2 h-20 px-6 py-6 ">

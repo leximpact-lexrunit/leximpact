@@ -15,6 +15,10 @@ const config = {
       padding: "2rem",
       screens: {
         "2xl": "1400px",
+        "sm": "640px",
+        "md": "768px",
+        "lg": "1024px",
+        "xl": "1280px",
       },
     },
     extend: {
@@ -32,6 +36,14 @@ const config = {
         foreground: "hsl(var(--foreground))",
         heroStrong: "hsl(var(--hero-strong))",
         heroMild: "hsl(var(--hero-mild))",
+
+        // signup color
+          signup: {
+          blue: "#0a2a5e",
+          navy: "#1e3a8a",
+          button: "#3f51b5",
+          "button-hover": "#303f9f",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
